@@ -1,0 +1,122 @@
+{
+  "SA_regresion_random_forest": {
+    "best_params": {
+      "max_depth": null,
+      "max_features": 1.0,
+      "min_samples_leaf": 3,
+      "n_estimators": 300
+    },
+    "test": {
+      "MAE": 54.15428404350287,
+      "RMSE": 67.63159109914243,
+      "R2": -0.3346314185032484
+    },
+    "cv_rmse": 81.17592603323224
+  },
+  "SA_clasificacion_arbol": {
+    "best_params": {
+      "ccp_alpha": 0,
+      "criterion": "gini",
+      "max_depth": 5,
+      "min_samples_leaf": 4,
+      "min_samples_split": 10
+    },
+    "test": {
+      "accuracy": 0.9035087719298246,
+      "precision": 0.8974358974358975,
+      "recall": 0.8333333333333334,
+      "f1": 0.8641975308641975,
+      "roc_auc": 0.8979828042328042
+    },
+    "cv_auc": 0.972703818369453
+  },
+  "DE_regresion_ridge": {
+    "best_params": {
+      "poly__degree": 1,
+      "ridge__alpha": 10
+    },
+    "test": {
+      "MAE": 51.563461365176636,
+      "RMSE": 66.1970283768515,
+      "R2": -0.2786130218803857
+    },
+    "cv_rmse": 71.5651660512674
+  },
+  "DE_clasificacion_logistica": {
+    "best_params": {
+      "log__C": 1,
+      "log__penalty": "l2",
+      "log__solver": "liblinear"
+    },
+    "test": {
+      "accuracy": 0.9736842105263158,
+      "precision": 0.975609756097561,
+      "recall": 0.9523809523809523,
+      "f1": 0.963855421686747,
+      "roc_auc": 0.9953703703703705
+    },
+    "cv_auc": 0.9953560371517026
+  },
+  "SA_kmeans": {
+    "best_k": 3,
+    "metrics": [
+      {
+        "k": 2,
+        "silhouette": 0.4460862795319684,
+        "calinski_harabasz": 2635.676391571999,
+        "davies_bouldin": 0.8791930778588101
+      },
+      {
+        "k": 3,
+        "silhouette": 0.5012589684919375,
+        "calinski_harabasz": 3520.6560944285575,
+        "davies_bouldin": 0.6852108051939195
+      },
+      {
+        "k": 4,
+        "silhouette": 0.47743613216590286,
+        "calinski_harabasz": 3787.421230900449,
+        "davies_bouldin": 0.7165415255922064
+      },
+      {
+        "k": 5,
+        "silhouette": 0.4601611581364057,
+        "calinski_harabasz": 3705.3699003096244,
+        "davies_bouldin": 0.7441552945615938
+      },
+      {
+        "k": 6,
+        "silhouette": 0.45524103939071114,
+        "calinski_harabasz": 3556.6086961654128,
+        "davies_bouldin": 0.7385040700032928
+      },
+      {
+        "k": 7,
+        "silhouette": 0.43337926744107597,
+        "calinski_harabasz": 3461.5773002949163,
+        "davies_bouldin": 0.8172516509511883
+      },
+      {
+        "k": 8,
+        "silhouette": 0.4270971760219821,
+        "calinski_harabasz": 3507.9146015512943,
+        "davies_bouldin": 0.7985008943372295
+      }
+    ]
+  },
+  "SA_PCA": {
+    "n_components_90": 6,
+    "first_two_scaled_variance": 0.5320847979308865,
+    "cumulative": [
+      0.2991355674520205,
+      0.5320847979308865,
+      0.6491972075417672,
+      0.7560534256040868,
+      0.8524062117714313,
+      0.9087048736637353,
+      0.9501606644229605,
+      0.9803388533986095,
+      1.0000000000000002
+    ]
+  }
+}
