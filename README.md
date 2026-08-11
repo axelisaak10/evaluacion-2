@@ -1,16 +1,14 @@
-# Análisis de aprendizaje automático
-
-Repositorio reproducible con notebooks, datos, modelos, gráficas y métricas para SA y DE.
+# Evaluación 2 - Aprendizaje automático
 
 **Repositorio público:** https://github.com/axelisaak10/evaluacion-2
 
-## Resultados principales
+## Algoritmos
 
-- SA Random Forest: R² de prueba -0.335, RMSE 67.63.
-- SA Árbol: AUC de prueba 0.898, recall 0.833.
-- DE Ridge: R² de prueba -0.279, RMSE 66.20.
-- DE Logística: AUC de prueba 0.995, recall 0.952.
-- K-means: k óptimo 3.
-- PCA: 6 componentes alcanzan 90% de varianza acumulada.
+- SA regresión: regresión lineal y Ridge.
+- SA clasificación: regresión logística y árbol de decisión.
+- SA agrupación: K-means.
+- SA reducción dimensional: PCA.
+- DE regresión alterna: Random Forest.
+- DE clasificación alterna: SVM.
 
-Abra los notebooks desde JupyterLab. Los modelos serializados están en `models/` y los resultados en `results/`.
+Se incluyen datos, notebooks ejecutados, modelos `.joblib`, métricas y gráficas.
