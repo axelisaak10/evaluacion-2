@@ -1,17 +1,36 @@
 {
-  "SA_regresion_random_forest": {
+  "SA_regresion_lineal": {
+    "test": {
+      "MAE": 51.05511735761212,
+      "RMSE": 67.4918624327565,
+      "R2": -0.32912234730143264
+    },
+    "cv_rmse": 75.81100155012989
+  },
+  "SA_regresion_ridge": {
     "best_params": {
-      "max_depth": null,
-      "max_features": 1.0,
-      "min_samples_leaf": 3,
-      "n_estimators": 300
+      "ridge__alpha": 10
     },
     "test": {
-      "MAE": 54.15428404350287,
-      "RMSE": 67.63159109914243,
-      "R2": -0.3346314185032484
+      "MAE": 51.563461365176636,
+      "RMSE": 66.1970283768515,
+      "R2": -0.2786130218803857
     },
-    "cv_rmse": 81.17592603323224
+    "cv_rmse": 71.5651660512674
+  },
+  "SA_clasificacion_logistica": {
+    "best_params": {
+      "log__C": 1,
+      "log__penalty": "l2"
+    },
+    "test": {
+      "accuracy": 0.9736842105263158,
+      "precision": 0.975609756097561,
+      "recall": 0.9523809523809523,
+      "f1": 0.963855421686747,
+      "roc_auc": 0.9953703703703705
+    },
+    "cv_auc": 0.9953560371517026
   },
   "SA_clasificacion_arbol": {
     "best_params": {
@@ -29,33 +48,6 @@
       "roc_auc": 0.8979828042328042
     },
     "cv_auc": 0.972703818369453
-  },
-  "DE_regresion_ridge": {
-    "best_params": {
-      "poly__degree": 1,
-      "ridge__alpha": 10
-    },
-    "test": {
-      "MAE": 51.563461365176636,
-      "RMSE": 66.1970283768515,
-      "R2": -0.2786130218803857
-    },
-    "cv_rmse": 71.5651660512674
-  },
-  "DE_clasificacion_logistica": {
-    "best_params": {
-      "log__C": 1,
-      "log__penalty": "l2",
-      "log__solver": "liblinear"
-    },
-    "test": {
-      "accuracy": 0.9736842105263158,
-      "precision": 0.975609756097561,
-      "recall": 0.9523809523809523,
-      "f1": 0.963855421686747,
-      "roc_auc": 0.9953703703703705
-    },
-    "cv_auc": 0.9953560371517026
   },
   "SA_kmeans": {
     "best_k": 3,
@@ -118,5 +110,33 @@
       0.9803388533986095,
       1.0000000000000002
     ]
+  },
+  "DE_regresion_random_forest": {
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "n_estimators": 300
+    },
+    "test": {
+      "MAE": 54.15428404350287,
+      "RMSE": 67.63159109914243,
+      "R2": -0.3346314185032484
+    },
+    "cv_rmse": 81.17592603323224
+  },
+  "DE_clasificacion_svm": {
+    "best_params": {
+      "svc__C": 0.1,
+      "svc__gamma": "scale",
+      "svc__kernel": "linear"
+    },
+    "test": {
+      "accuracy": 0.9912280701754386,
+      "precision": 1.0,
+      "recall": 0.9761904761904762,
+      "f1": 0.9879518072289156,
+      "roc_auc": 0.9963624338624338
+    },
+    "cv_auc": 0.9948400412796697
   }
 }
