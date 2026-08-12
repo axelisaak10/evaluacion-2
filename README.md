@@ -11,4 +11,4 @@
 - DE regresión alterna: Random Forest.
 - DE clasificación alterna: SVM.
 
-Se incluyen datos, notebooks ejecutados, modelos `.joblib`, métricas y gráficas.
+Se incluyen los datos, los notebooks completos, los modelos `.joblib`, las métricas y las gráficas.
